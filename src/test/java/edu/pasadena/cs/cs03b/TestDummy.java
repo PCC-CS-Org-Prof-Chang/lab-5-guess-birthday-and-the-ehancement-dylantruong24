@@ -14,12 +14,22 @@ public class TestDummy {
    @Test
    public void testDummy()
    {
-     // action
-     int iResult = Dummy.dummy();
-     // assertion
-     assertEquals(0, iResult);
 
-     // TODO: add your own test cases
+    int[] test1 = {1, 0, 0, 1, 1};
+    int iResult = Dummy.binaryToInt(test1);
+    assertEquals(19, iResult);
+
+    int[] test2 = {1, 1, 0, 0, 1};
+    int iResult2 = Dummy.binaryToInt(test2);
+    assertEquals(27, iResult2);
+
+    int[] test3 = {1, 0, 0, 0, 0};
+    int iResult3 = Dummy.binaryToInt(test3);
+    assertEquals(16, iResult3);
+
+    int[] test4 = {1, 0, 1, 1, 0};
+    int iResult4 = Dummy.binaryToInt(test4);
+    assertEquals(22, iResult4);
 
    }
 }
